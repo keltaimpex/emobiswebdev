@@ -1,15 +1,123 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <!--META DATA OF THE PAGE:MORE: TITLE-->
+        <meta charset="utf-8">
+        <title>Emobilis</title>
+<!--        link to the file-->
+        <link href="css/style.css" rel="stylesheet"/>
 
-<head>
-    <title>My first webpage</title>
-</head>
-<body>
-<h1>KELVIN NDWOTA.</h1>
-<h2>KELVIN NDWOTA.</h2>
-<h3>KELVIN NDWOTA.</h3>
-<h4>KELVIN NDWOTA.</h4>
-<h5>KELVIN NDWOTA.</h5>
-<h6>KELVIN NDWOTA.</h6>
-</body>
+<!--        Internal css-->
+        <style>
+            /*css code*/
+            button {
+                background-color:green;
+                color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            /*to style using an id, place#infront of the id name*/
+            #btnsubmit{
+                background-color:blue;
+                color: white;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            .table{
+                margin: 20px;
+                width: 100%;
+                padding: 10px;
+                font-family: Cambria;
+            }
+            td{
+                padding: 12px;
+                text-align: center;
+                border: 1px solid grey;
+            }
 
+        </style>
+
+
+    </head>
+    <body style="background-color: black;color: white">
+        <!--what the user can see-->
+        <!--common text based element-->
+        <p style="font-family: 'Calibri Light';font-weight: bold;color: purple">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ipsa assumenda velit repudiandae quo expedita id dignissimos nostrum doloribus esse! Blanditiis quae reiciendis culpa nesciunt, aliquid eaque dolores. Officia, inventore.</p>
+        <!--lists-->
+        <!--ordered elements-->
+        <ol>
+            <li>AFC Leopards</li>
+            <li>sofapaka</li>
+            <li>Kenya police</li>
+            <li>Gor mahia</li>
+        </ol>
+        <!-- unordered elements -->
+         <ul>
+            <li>AFC Leopards</li>
+            <li>Sofapaka</li>
+            <li>Kenya police</li>
+            <li>Gor mahia</li>
+         </ul>
+         <!-- headers -->
+          <h1>heading 1</h1>
+          <h6>heading 2</h6>
+          <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloribus, saepe ab dolore accusamus voluptate dicta, quas temporibus asperiores quos tempore mollitia nulla! Reiciendis adipisci, omnis dolorum molestias deserunt sunt!</blockquote>
+          <!-- buttons -->
+           <button>CLICK ME</button>
+        <button id="btnsubmit">Submit me</button>
+           <!-- iMAGE -->
+            <img src="assets/logo.png" width="200" height="200" alt="some image here"/>
+<!--    table-->
+        <table class="table" >
+    <thead>
+    <th>Position</th>
+    <th>Team name</th>
+    <th>Points</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Gor mahia</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>police fc</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>ulinzi stars</td>
+        <td>30</td>
+    </tr>
+    </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="2">Total ticket pricing </td>
+                <td>$5.50</td>
+            </tr>
+            </tfoot>
+    </table>
+<!-- form-->
+    <form method="POST">
+        <label>Team name</label>
+        <input type="text" placeholder="Enter Team Name" name="Team_name"/>
+        <label>Season points</label>
+        <input type="number" placeholder="Enter points" name="team_points"/>
+        <label>Team email</label>
+        <input type="email" placeholder="Enter team email" name="Team_email"/>
+        <label>Team Picture</label>
+        <input type="file" name="team_pic"/>
+        <label>Home team color</label>
+        <select name="team_color">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+        </select>
+        <input type ="submit" value="Submit Team"/>
+        <input type="reset" value="Reset Form"/>
+    </form>
+    </body>
 </html>
